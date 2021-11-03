@@ -1,0 +1,167 @@
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  outline:none;
+  text-decoration:none;
+  outline:none;
+  font-family:inherit;
+  box-sizing:border-box;
+}
+
+ol, ul, li {
+  list-style:none;
+  display:block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing:0;
+}
+
+a img {
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}  
+
+button, input, textarea, select {
+  appearance: none !important;
+  -webkit-appearance: none !important; 
+  border-radius: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color:#55bcc9;
+  background-image: radial-gradient(circle, rgba(252,68,69,1) 0%, rgba(151,202,250,1) 70%, rgba(63,238,230,1) 100%);
+}
+
+@keyframes welcomeAnim {
+  0% {background-color: #3feee6; transform: rotate(0) scale(1);}
+  50% {background-color: #fc4445; transform: rotate(180deg) scale(0.1);}
+  100% {background-color: #3feee6; transform: rotate(360deg) scale(1);}
+}
+
+#welcome {
+  position: relative;
+  width: calc(100vh - 160px);
+  height: calc(100vh - 160px);
+  margin: 80px auto;
+  
+}
+
+
+#welcome::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
+  border-radius: 15px;
+  background-color: #3feee6;
+  box-shadow: 0 0 40px #fc4445;
+
+  animation-name: welcomeAnim;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#welcome button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 90px;
+  z-index: 3;
+  font-weight: 800;
+  color: #fc4445;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s;   
+}
+
+
+#welcome button:before, #welcome button:after { 
+  position: absolute;
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%; 
+  
+  border: 8px solid #97cafafe;
+  background-color:#55bcc9;
+}
+
+
+@keyframes textBlink {
+  0% {color: #3feee6 ;}
+  40% {color: #97cafafe;}
+  50% {color: #fc4445;}
+  90% {color: #3feee6;}
+}
+
+#welcome button:after {
+  content: "Click me";
+  left: -15px; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%;
+  animation-name: textBlink;
+  animation-fill-mode: forwards;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+#welcome button.clicked:after {
+  content: "666";
+}  
+
+#welcome button:hover {
+  transform: translate(-50%, -50%) scale(2) rotate(720deg);
+}
+
+#catImg {
+ opacity: 0;
+ position: fixed;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+}
+
+@keyframes imgBlink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
+}
+
+
+#catImg.clicked {
+  animation: imgBlink normal 200ms infinite ease-in-out;
+  z-index: 2;
+}
+
+
