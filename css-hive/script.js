@@ -1,7 +1,13 @@
+var crosses = document.getElementsByClassName('cross');
+
 function btnClicked() {
   document.getElementById("catImg").classList.toggle("clicked");
   document.getElementById("heartBtn").classList.toggle("clicked");
+  for (let index = 0; index < crosses.length; index++) {
+    crosses[index].classList.toggle("clicked");  
+  }
 }
+
 var i = 0;
 
 function togglePlay() {

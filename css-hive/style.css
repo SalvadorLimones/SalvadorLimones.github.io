@@ -164,4 +164,67 @@ body {
   z-index: 2;
 }
 
+.cross {
+  background-color: black;
+  position: fixed;
+  opacity: 0;
+}
+
+@keyframes crossRotate {
+  0% {background-color: black ;}
+  49% {background-color: #fc4445;}
+  50% {transform: rotateY(360deg);}
+  100% {background-color: black;}
+}
+
+.cross.clicked {
+  opacity: 100%;
+  animation: crossRotate 5s infinite;
+  z-index: 3;
+}
+
+.cross1 {
+
+  top: 10%;
+  left: 10%;
+}
+
+.cross2 {
+
+  top: 90%;
+  left: 10%;
+}
+
+.cross3 {
+  top: 50%;
+  left: 20%;
+}
+
+.cross4 {
+  top: 10%;
+  left: 90%;
+}
+
+.cross5 {
+  top: 50%;
+  left: 80%;
+}
+
+.cross6 {
+  top: 90%;
+  left: 90%;
+}
+
+.crossHorizontal {
+  width: 8px;
+  height: 60px;
+}
+
+.crossVertical {
+  position: relative;
+  top: 60%;
+  left: -16px;
+  width: 40px;
+  height: 8px;
+}
 
