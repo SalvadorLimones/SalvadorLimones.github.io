@@ -45,28 +45,30 @@ section {
   position: relative;
 }
 
+button {
+  width: 200px;
+
+  position: absolute;
+}
+
 #firstSection {
   background-color: #FFFAFF;
 }
 
 #firstBtn {
-  width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: #30BCED;
   
-  position: absolute;
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
 }
 
 #secondBtn {
-  width: 200px;
   height: 60px;
   background-color: #303036;
   
-  position: absolute;
   bottom: 40px;
   right:40px;
 }
@@ -76,11 +78,9 @@ section {
 }
 
 #thirdBtn {
-  width: 200px;
   height: 60px;
   background-color: #FC5130;
   
-  position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
