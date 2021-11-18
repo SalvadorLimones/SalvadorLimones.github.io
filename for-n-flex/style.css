@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button, input, textarea, select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+
+body{
+  background-color: #f6f4f1;
+
+  }
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#root div {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Special Elite', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  
+}
+
+#root div:hover {
+  width: 105px;
+  height: 105px;
+  margin: 7.5px;
+  font-size: 22px;
+
+}
+
