@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button, input, textarea, select {
+  appearance: none !important;
+  -webkit-appearance: none !important; 
+  border-radius: 0;
+}
+
+body{
+  background: rgb(34,38,41);
+  background: linear-gradient(90deg, rgba(34,38,41,1) 0%, rgba(107,110,112,1) 79%);
+}
+
+#root, #from-NASA{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  text-shadow: -1px 0 #86c232, 0 1px #86c232, 1px 0 #86c232, 0 -1px #86c232;
+}
+
+#date-picker, #image-explanation{
+  background-color: rgb(134, 194, 50);
+  border-radius: 10px;
+  font-weight:bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#image-title{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #86c232;
+  text-shadow: -1px 0 #61892f, 0 1px #61892f, 1px 0 #61892f, 0 -1px #61892f;
+  font-weight:bold;
+}
+
+#image-content, #image-content img{
+  height: 56vh;
+  /* box-shadow: rgba(134, 194, 50, 0.3) 0px 19px 38px, rgba(134, 194, 50, 0.22) 0px 15px 12px; */
+  box-shadow: rgba(134, 194, 50, 0.56) 0px 22px 70px 4px;
+}
+
+#video-here{
+  height: 56vh;
+  width: 60vw;
+}
+
+#image-explanation{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 95vw;
+  padding: 5px 40px 5px;
+  font-style: italic;
+  font-weight:bold;
+}
+
+.doNotDisplay{
+  display: none;
+}
+
+#image-content.clicked{
+  width: auto;
+  height: 92vh;
+  position: absolute;
+  top: 4vh;
+  left: auto;
+}
+
+#image-content.clicked img{
+  width: auto;
+  height: 92vh;
+}
+
+#image-content.clicked + div{
+  display: none;
+}
