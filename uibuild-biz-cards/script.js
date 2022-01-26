@@ -2,4 +2,4 @@ function loadEvent() {
   console.log("page loaded");
 }
 
-window.addEventListener('load', loadEvent);
+window.addEventListener("load", loadEvent);
