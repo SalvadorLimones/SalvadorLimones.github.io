@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  background-color: #ffeedf;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.card-container {
+  width: 290px;
+  height: 416px;
+  margin: 31px;
+  padding: 27px;
+  background: #fff;
+}
+
+.card-name {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-size: 48px;
+  color: #33793f;
+}
+
+.card-restaurant {
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.card-address {
+  margin-top: 25px;
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-size: 24px;
+}
