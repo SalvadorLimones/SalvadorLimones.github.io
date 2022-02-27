@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+
+.main-container {
+  background: #ffeedf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding: 0 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #145434;
+  border-bottom: solid 2px grey;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  position: absolute;
+  font-size: 36px !important;
+  right: 10px;
+  top: 10px;
+}
+
+.card-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beer-card {
+  width: 400px;
+  height: 300px;
+  margin: 30px;
+  position: relative;
+  padding: 40px 30px;
+  background: #145434;
+  color: #ffeedf;
+}
+
+.number-container {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border-radius: 50%;
+  background: #ffeedf;
+  border: solid 2px #145434;
+  color: #145434;
+  text-align: center;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.title-line {
+  width: calc(100% - 60px);
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  background: #ffeedf;
+}
+
+.text-sub {
+  position: absolute;
+  top: 55%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text {
+  font-weight: 700;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  border: solid 2px #145434;
+  background: #ffeedf;
+  color: #145434;
+  font-size: 14px;
+}
+
+.button:hover {
+  border-color: #ffeedf;
+  background: #145434;
+  color: #ffeedf;
+}
+
+.button div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  font-size: 36px !important;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .beer-card {
+    height: 300px !important;
+    width: 95%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
